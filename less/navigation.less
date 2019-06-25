@@ -3,27 +3,29 @@
 header {
     width: 100%;
     margin: 0 auto;
-    background-color: @nav-bg;
+    .headerbackground() ; // mixin mixin mixin mixin mixnin
+    // display: flex;
+    // flex-direction: column;
 
     .navigation-wrap {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
 
         nav {
             display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-between ; 
 
             a {
-                padding: 10px 30px;
+                justify-content: space-evenly;
+                padding: 15px 25px;
                 text-decoration: none;
                 font-size: 1.2rem;
             }
 
         }
     }
-
 }
+
 

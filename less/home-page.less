@@ -73,10 +73,10 @@
     }
 
     .walk-text {
-      width: 50%;
-      @media (max-width: 500px) {
-        width: 100%;
-      }
+      width: 50% @phone; // mobile size variable // mobile size variable // mobile size variable // mobile size variable // mobile size variable
+      // @media (max-width: 500px) {
+      //   width: 100%;
+      // }
 
       h3 {
         margin-bottom: 10px;
@@ -93,14 +93,14 @@
         background-color: @btn-bg-color;
         border-radius: 5px;
         display: flex;
-        width: auto;
+        width: auto; //mobile variable -  //mobile variable -  //mobile variable - //mobile variable -
         @media (max-width: 500px) {
           width: 100%;
           padding: 0 35%;
         }
       
         a {
-          color: white;
+          color: @wild-sand
           font-size: 1.6rem;
           padding: 10px 30px;
           text-align: center;
@@ -112,18 +112,19 @@
   
 
     .walk-img {
-      width: 46%;
+      width: 46% @phone; // @media breakpoint-variable // @media breakpoint-variable // @media breakpoint-variable
       margin-left: 4%;
-      @media (max-width: 500px) {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 30px;
-      }
+      // @media (max-width: 500px) {
+      //   width: 100%;
+      //   margin: 0 auto;
+      //   margin-bottom: 30px;
+      // }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        .alilpadding() ;  // Mixins // Mixins // Mixins // Mixins // Mixins // Mixins
       }
     }
   }

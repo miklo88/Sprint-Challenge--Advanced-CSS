@@ -1,1 +1,35 @@
 // Mixins Here
+
+.alilpadding() {
+    padding-bottom: 20px;
+}
+
+.headerbackground() {
+    background-color: @nav-bg;
+    padding: 20px;
+}
+
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+// usage - paramatric mixins
+// .button(@background-color, @color) {
+//     background-color: ;
+//     border-radius: 5px;
+//     display: flex;
+//     width: auto; //mobile variable -  //mobile variable -  //mobile variable - //mobile variable -
+//     @media (max-width: 500px) {
+//       width: 100%;
+//       padding: 0 35%;
+//     }
+// .custom-layout(@justify, @align){
+// 	display: flex;
+// 	justify-content: @justify;
+// 	align-items: @align;
+// }
+// usage
+.custom-layout(flex-end, center);
