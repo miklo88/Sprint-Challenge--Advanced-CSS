@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  @phone ;
 
   .intro {
     display: flex;
@@ -25,14 +26,14 @@
     flex-wrap: wrap;
     width: 100%;
     .sky {
-      @media (max-width: 500px) {
-        display: none;
-      }
+      // @media (max-width: 500px) {
+      //   display: none;
+      // }
     }
     .launch {
-      @media (max-width: 500px) {
-        display: none;
-      }
+      // @media (max-width: 500px) {
+      //   display: none;
+      // }
     }
 
     img {
@@ -40,9 +41,9 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-      @media (max-width: 500px) {
-        width: 100%;
-      }
+      // @media (max-width: 500px) {
+      //   width: 100%;
+      // }
       
     }
 
@@ -68,15 +69,13 @@
     justify-content: center;
     @media (max-width: 500px) {
       flex-direction: column-reverse;
-      margin: 20px 2.5%;
-      padding: 0;
     }
 
     .walk-text {
-      width: 50% @phone; // mobile size variable // mobile size variable // mobile size variable // mobile size variable // mobile size variable
-      // @media (max-width: 500px) {
-      //   width: 100%;
-      // }
+      width: 50%; // mobile  // mobile // mobile // mobile // mobile
+      @media (max-width: 500px) {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -86,39 +85,49 @@
         margin-bottom: 26px;
       }
     }
+
     .btn {
       width: 100%;
     
       button {
         background-color: @btn-bg-color;
         border-radius: 5px;
-        display: flex;
-        width: auto; //mobile variable -  //mobile variable -  //mobile variable - //mobile variable -
-        @media (max-width: 500px) {
-          width: 100%;
-          padding: 0 35%;
+        // width: auto; //mobile variable -  //mobile variable -  //mobile variable - //mobile variable -
+        cursor: pointer;
+        padding: 15px 35px;
+        
+          a {
+            color: @wild-sand;
+            font-size: 1.2rem;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+          }
         }
-      
-        a {
-          color: @wild-sand
-          font-size: 1.6rem;
-          padding: 10px 30px;
-          text-align: center;
-          text-decoration: none;
+        &:hover {
+          background-color: @wild-sand;
+          color: @btn-bg-color;
         }
 
       }
     }
   
-
+    //  .btn {
+    //   padding: 10px 40px;
+    //   border-radius: 5px;
+    //   background-color: @btn-bg-color;;
+    //   color: @wild-sand;
+    //   cursor: pointer;
+    // }
+    // &:hover {
+    //   background-color: @wild-sand;
+    //   color: @btn-bg-color;
+    // }   ------- add a tag
+  
     .walk-img {
-      width: 46% @phone; // @media breakpoint-variable // @media breakpoint-variable // @media breakpoint-variable
+      width: 46%; // @media breakpoint-variable // @media breakpoint-variable // @media breakpoint-variable
       margin-left: 4%;
-      // @media (max-width: 500px) {
-      //   width: 100%;
-      //   margin: 0 auto;
-      //   margin-bottom: 30px;
-      // }
+      .flex-layout(@justify, @align);
       
       img {
         width: 100%;

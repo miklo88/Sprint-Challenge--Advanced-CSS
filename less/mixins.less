@@ -17,19 +17,15 @@
 
 
 // usage - paramatric mixins
-// .button(@background-color, @color) {
-//     background-color: ;
-//     border-radius: 5px;
-//     display: flex;
-//     width: auto; //mobile variable -  //mobile variable -  //mobile variable - //mobile variable -
-//     @media (max-width: 500px) {
-//       width: 100%;
-//       padding: 0 35%;
-//     }
-// .custom-layout(@justify, @align){
-// 	display: flex;
-// 	justify-content: @justify;
-// 	align-items: @align;
-// }
-// usage
-.custom-layout(flex-end, center);
+.flex-layout(@justify, @align) {
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+}
+// .flex-layout(flex-end, center);
+// aimed for mobile styling centered content.
+
+.fontfam-color(@font-family, @color) {
+    font-family: 'Ubuntu', sans-serif;
+    color: @main-font-color;
+}
