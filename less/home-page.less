@@ -24,9 +24,38 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media(max-width: 500px) {
+          .container {
+            width: 500px;
+            background: gray;
+          }
     }
+
   }
 
+/* Adaptive Layout */
+// .container {
+//   width: 800px;
+//   margin: 0 auto;
+//   border: 1px solid red;
+//   padding: 20px;
+// }
+
+// @media(max-width: 500px) {
+//   .container {
+//     width: 500px;
+//     background: gray;
+//   }
+
+//   .container header nav {
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   .container header nav a {
+//     margin-bottom: 20px;
+//   }
+// }
   .visit-planets {
     padding: 15px;
 
@@ -55,9 +84,6 @@
 
       p {
         margin-bottom: 26px;
-      }
-
-      .btn {
       }
     }
 
